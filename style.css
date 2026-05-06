@@ -1,0 +1,247 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Navigation ===== */
+nav {
+  background: #1a3a5c;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0;
+  align-items: center;
+  height: 3.5rem;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0 1.25rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  color: #d0dce8;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #2c5f8a;
+  color: #fff;
+}
+
+/* ===== Page Header ===== */
+.page-header {
+  background: #1a3a5c;
+  color: #fff;
+  padding: 3rem 2rem 2.5rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.page-header p {
+  margin-top: 0.6rem;
+  font-size: 1.05rem;
+  color: #a8c4dc;
+}
+
+/* ===== Main Content ===== */
+main {
+  flex: 1;
+  max-width: 900px;
+  width: 100%;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  color: #1a3a5c;
+  margin-bottom: 0.4rem;
+}
+
+.card .meta {
+  font-size: 0.82rem;
+  color: #888;
+  margin-bottom: 0.8rem;
+}
+
+.card p {
+  line-height: 1.65;
+  color: #444;
+}
+
+/* ===== Home hero section ===== */
+.hero {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  font-size: 1.6rem;
+  color: #1a3a5c;
+  margin-bottom: 0.75rem;
+}
+
+.hero p {
+  line-height: 1.7;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 1.25rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #1a3a5c;
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin: 0.3rem 0.4rem;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #2c5f8a;
+}
+
+/* ===== Quick links on home ===== */
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.quick-link-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.quick-link-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.quick-link-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.quick-link-card h3 {
+  font-size: 1rem;
+  color: #1a3a5c;
+  margin-bottom: 0.3rem;
+}
+
+.quick-link-card p {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ===== Calendar embed ===== */
+.calendar-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-container p.setup-note {
+  background: #fff8e1;
+  border-left: 4px solid #f9a825;
+  padding: 0.75rem 1rem;
+  border-radius: 0 5px 5px 0;
+  font-size: 0.88rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.55;
+}
+
+.calendar-container iframe {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  min-height: 600px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #1a3a5c;
+  color: #8aaac4;
+  text-align: center;
+  padding: 1.25rem 1rem;
+  font-size: 0.82rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .page-header h1 {
+    font-size: 1.6rem;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  nav ul li a {
+    padding: 0 0.9rem;
+    font-size: 0.88rem;
+  }
+
+  main {
+    margin: 1.5rem auto;
+  }
+}
