@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quorum – Announcements</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="announcements.html">Announcements</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <h1>Announcements</h1>
+    <p>Latest news and updates from the quorum</p>
+  </header>
+
+  <main>
+
+    <!-- Add new announcements by copying the .card block below and updating the content -->
+
+    <article class="card">
+      <h2>Sunday Quorum Meeting</h2>
+      <div class="meta">May 4, 2026</div>
+      <p>
+        Reminder that quorum meeting begins at 10:00 AM in room 204. This week's
+        lesson will be on temple covenants. Brothers are encouraged to read
+        <em>Doctrine and Covenants 84</em> beforehand.
+      </p>
+    </article>
+
+    <article class="card">
+      <h2>Service Project – Food Bank</h2>
+      <div class="meta">May 2, 2026</div>
+      <p>
+        We will be volunteering at the local food bank on Saturday, May 10th,
+        starting at 9:00 AM. Please bring work gloves if you have them. See the
+        <a href="calendar.html">calendar</a> for full details.
+      </p>
+    </article>
+
+    <article class="card">
+      <h2>Home Teaching Assignments</h2>
+      <div class="meta">April 28, 2026</div>
+      <p>
+        Updated home teaching (ministering) assignments have been distributed.
+        Please reach out to your assigned families this month. Contact the quorum
+        secretary if you have any questions.
+      </p>
+    </article>
+
+    <article class="card">
+      <h2>Campout – Memorial Day Weekend</h2>
+      <div class="meta">April 25, 2026</div>
+      <p>
+        The quorum campout is planned for Memorial Day weekend (May 24–26). More
+        details to follow. Start planning ahead – spots may be limited. RSVP to
+        the quorum president by May 15th.
+      </p>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Quorum</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

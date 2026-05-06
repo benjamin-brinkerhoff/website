@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quorum – Calendar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="announcements.html">Announcements</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <h1>Calendar</h1>
+    <p>Upcoming quorum activities, meetings, and events</p>
+  </header>
+
+  <main>
+
+    <div class="calendar-container">
+      <!--
+        HOW TO CONNECT YOUR GOOGLE CALENDAR
+        ====================================
+        1. Open Google Calendar (calendar.google.com).
+        2. In the left sidebar, find the calendar you want to embed, click the
+           three-dot menu next to it, and choose "Settings and sharing".
+        3. Scroll down to "Integrate calendar" and copy the
+           "Embed code" (the full <iframe> snippet).
+        4. Replace the <iframe> below with your copied embed code.
+           Make sure to keep the style="..." attribute or add it so the iframe
+           fills the full width (width="100%").
+
+        The placeholder iframe below uses a public Google Calendar demo so the
+        page renders correctly until you replace it.
+      -->
+      <p class="setup-note">
+        ℹ️ <strong>Setup required:</strong> Replace the iframe below with your
+        quorum's Google Calendar embed code. See the HTML comment above for
+        step-by-step instructions.
+      </p>
+
+      <!--
+        Replace the src value below with your calendar's embed src URL.
+        Example src format:
+          https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID%40group.calendar.google.com&ctz=America%2FDenver
+      -->
+      <iframe
+        src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FDenver&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&mode=MONTH"
+        style="border:0; width:100%; min-height:600px;"
+        frameborder="0"
+        scrolling="no"
+        title="Quorum Calendar"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Quorum</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
